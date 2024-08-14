@@ -1,0 +1,28 @@
+*{
+    min-height: 100%;
+    overflow: hidden;
+}
+body{
+    color: black;
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+.textAnimation{
+    display: inline-block;
+    margin: 25%;
+}
+.text{
+    font-size: 50px;
+    font-weight: 700;
+    border-right: 0.15rem solid lightcoral ;
+    white-space: nowrap;
+    animation: typing 4s steps(40,end) infinite;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}

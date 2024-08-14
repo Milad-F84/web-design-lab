@@ -1,0 +1,33 @@
+body{
+    background-color: aliceblue;
+}
+.circleAnimation{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 50px;
+    animation-name: circlemove;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes circlemove{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(500px,0);
+        background-color: fuchsia;
+    }
+    50%{
+        transform: translate(0,300px);
+        background-color: chocolate;
+    }
+    75%{
+        transform: translate(500px,300px);
+        background-color: crimson;
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
