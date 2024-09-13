@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin-right: 0;
+    margin-left: 0;
+}
+.motherImg{
+    display: flex;
+    justify-content: center;
+}
+.itemImg{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.items{
+    height: 200px;
+    object-fit: contain;
+}
