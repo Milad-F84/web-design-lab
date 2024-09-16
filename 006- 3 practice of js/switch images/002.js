@@ -1,5 +1,5 @@
 const images = document.querySelectorAll("img");
-const btn1 = document.querySelectorAll("button");
+const btn1 = document.querySelector("button");
 //console.log(images[4].getAttribute("src"));
 function imageSwitcher(){
     let imgMother = images[0].getAttribute("src");
@@ -7,13 +7,13 @@ function imageSwitcher(){
     let item2 = images[2].getAttribute("src"); 
     let item3 = images[3].getAttribute("src"); 
     let item4 = images[4].getAttribute("src"); 
-    if(document.getElementById('img1').clicked == true){
+    if(document.getElementById('img1').onclick == true){
         images[0].setAttribute("src", item1);
-    }else if(document.getElementById('img2').clicked == true){
+    }else if(document.getElementById('img2').onclick == true){
         images[0].setAttribute("src", item2);
-    }else if(document.getElementById('img3').clicked == true){
+    }else if(document.getElementById('img3').onclick == true){
         images[0].setAttribute("src", item3);
-    }else if(document.getElementById('img4').clicked == true){
+    }else if(document.getElementById('img4').onclick == true){
         images[0].setAttribute("src", item4);
     }
 }
